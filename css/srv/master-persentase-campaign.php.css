@@ -1,0 +1,29 @@
+<style>
+div{
+	float:left;
+}
+#table-data{
+	margin: 0 auto;	
+}
+
+#table-data{	
+	border-collapse: separated;
+	border: none solid #CCC;
+	width:300px;
+	max-width:100%;
+	text-align:center;	
+}
+#table-data td{
+	padding:3px;
+	border: none solid #CCC;
+}
+#table-data tr:first-child td{
+	border:none;
+}
+#table-data tr:nth-child(1) td{
+	font-weight:900;
+	background-color:#CCC;
+	border:1px solid #999;
+}
+
+</style>

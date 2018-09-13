@@ -1,0 +1,122 @@
+body, table, div, input, select, textarea{
+	font-family:verdana, arial, sans, helvetica;
+	font-size:12px;
+	line-height:27px;
+	margin:0px;
+}
+input[type=text], input[type=password], input[type=button], input[type=submit], select, textarea{
+	width:400px;
+	height:37px;
+	border:solid #999 1px;
+	padding:0px 7px 0px 7px;
+}
+input[type=submit],input[type=button]{
+	cursor:hand;
+	background-color:#666;
+	color:#EEE;
+}
+
+.input-container input[type="text"], input[type="password"], textarea, select{
+	margin-right:3px !important;
+	float:left;
+}
+div.error-empty-input{
+	float:left;
+	background-image:url(../images/warning.png); 
+	background-repeat:no-repeat;
+	background-position:center center;
+	min-height:30px; width:19px;
+	display:none;
+}
+
+/* grey layer, dialog, tooltip */
+.ui-dialog{ position:fixed !important;}
+.ui-tooltip{ font-size:12px; color:#737375;}
+.tbox {position:absolute; display:none; padding:14px 17px; z-index:90000}
+.tinner {padding:15px; -moz-border-radius:5px; border-radius:1px; background:#fff url(../images/generator.gif) no-repeat 50% 50%; border:none solid #F0F0F3}
+.tmask {position:absolute; display:none; top:0px; left:0px; height:100%; width:100%; background:#000; z-index:8000}
+.tclose {position:absolute; top:17px ; right:17px; width:32px; height:32px; cursor:pointer; background:url(../images/close.png) no-repeat; display:none;}
+/*.tclose:hover {background-position:0 -30px}*/
+
+#greymask {background:#333}
+
+/* slide menu */
+.slideout-menu {
+		position: fixed;
+		top: 0;
+		left: -250px;
+		width: 250px;
+		height: 100%;
+		background: #333;
+		z-index: 100;
+	}
+.slideout-menu h3 {
+	position: relative;
+	padding: 1px 10px;
+	color: #fff;
+	font-size: 12px;
+	font-weight: 900;
+	border-bottom: 4px none #222;
+}
+.slideout-menu .slideout-menu-toggle {
+	position: absolute;
+	top: 1px;
+	right: 10px;
+	display: inline-block;
+	padding: 6px 9px 5px;
+	font-family: Arial, sans-serif;
+	font-weight: bold;
+	line-height: 1 !important;
+	background: #222;
+	color: #999;
+	text-decoration: none;
+	vertical-align: top;
+}
+.slideout-menu .slideout-menu-toggle:hover {
+	color: #fff;
+}
+.slideout-menu ul {
+	list-style: none;
+	font-weight: 300;
+	border-top: 1px solid #151515;
+	border-bottom: 1px solid #454545;
+}
+.slideout-menu ul li {
+	border-top: 1px solid #454545;
+	border-bottom: 1px solid #151515;
+	margin-left:-39px;
+}
+.slideout-menu ul li a {
+	position: relative;
+	display: block;
+	padding: 10px;
+	color: #999;
+	text-decoration: none;
+}
+.slideout-menu ul li a:hover {
+	background: #000;
+	color: #fff;
+}
+.slideout-menu ul li a i {
+	position: absolute;
+	top: 15px;
+	right: 10px;
+	opacity: .5;
+}
+
+.slideout-menu-toggle {
+	font-size: 1.2em;
+	color: #999;
+	text-decoration: none;
+}
+.slideout-menu-toggle:hover {
+	color: #fff;
+}
+.slideout-menu-toggle i {
+	vertical-align: top;
+	margin: 5px 3px 0 0;
+}
+
+img[src="images/wrench-512.png"]{
+	float:right;
+}

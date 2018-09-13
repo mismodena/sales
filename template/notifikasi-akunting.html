@@ -1,0 +1,25 @@
+<h3>HALLO, TIM AKUNTING</h3>
+
+<p>
+<strong style="font-size:37px">S</strong>ekarang sudah tanggal 1... waktunya untuk setting data item campaign di <strong>Aplikasi Perhitungan Komisi SPG/M</strong>.
+</p>
+<p>
+Terlampir adalah file excel yang berisi template isian untuk diisi dan di-upload sesuai dengan data item campaign yang didapat dari Departemen Product Marketing. 
+File excel ini terbagi dalam 2 sheet : sheet "master_produk" dan sheet "data_item_campaign". <br />
+<strong>Sheet "master_produk"</strong> berisi semua item barang jadi yang ada di ACCPAC, yang di-download <i>fresh</i> langsung dari ACCPAC dan berisi nama item (kolom A) dan kode ACCPAC item (kolom B).<br />
+<strong>Sheet "data_item_campaign"</strong> berisi item campaign yang didapat dari Dept. Product Marketing. Di sheet "data_item_campaign" ada formula "=IF(A1<>"",VLOOKUP(TRIM(A1),master_produk!$A$1:$B$692,2,0),"")" di sel B1 yang berfungsi untuk mencari kode ACCPAC dari item campaign yang ada di sel A1 dengan referensi dari sheet "master_produk".
+</p>
+<p>
+<strong style="font-size:37px">C</strong>ara pengisian data di sheet "data_item_campaign" adalah :
+<ul>
+	<li><i>Copy</i> semua item yang ada di file excel data item campaign dari Dept. Product Marketing dan <i>paste</i> ke sel-sel di kolom A. Misalnya BH 1945, DD 16 dll.</li>
+	<li>Tarik sel B1 ke bawah sampai sebatas baris data terakhir di kolom A (item terakhir yang diisikan dari data item campaign Dept. Product Marketing).</li>
+	<li>Pastikan setiap sel di kolom B bernilai sesuai dengan kode ACCPAC masing-masing item yang ada di kolom A. Periksa data nama item di sel pada kolom A, apabila ada kode ACCPAC yang masih kosong.</li>
+</ul>
+Apabila sheet "data_item_campaign" sudah terisi dengan lengkap, simpan file excel dan upload ke menu "Item Campaign Bulanan" di Aplikasi Perhitungan Komisi SPG/M. 
+Klik pada tombol "Mulai Perhitungan Komisi" di menu "Item Campaign Bulanan" dan ikuti petunjuk berikutnya.
+</p>
+<div style="float:right; text-align:center; margin-right:37px">
+<img src="http://192.182.10.3/sales/images/Good-Luck-Smily611.jpg" style="border:none;" height="147px" />
+<h3>GOOD LUCK!</h3>
+</div>
